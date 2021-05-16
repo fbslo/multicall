@@ -6,6 +6,7 @@ const abi = require('./erc20.json')
 // CUB-busd
 const calls = [
   {
+    //get CUB balance of CUB-BUSD pair
     "address": "0x50d809c74e0b8e49e7b4c65bb3109abe3ff4c1c1",
     "name": "balanceOf",
     "params": [
@@ -13,6 +14,7 @@ const calls = [
     ]
   },
   {
+    //get BUSD balance of CUB-BUSD pair
     "address": "0xe9e7cea3dedca5984780bafc599bd69add087d56",
     "name": "balanceOf",
     "params": [
@@ -20,6 +22,7 @@ const calls = [
     ]
   },
   {
+    //get CUB-BUSD balance of LionsDen contract
     "address": "0x0EF564D4F8D6C0ffE13348A32e21EFd55e508e84",
     "name": "balanceOf",
     "params": [
@@ -27,14 +30,17 @@ const calls = [
     ]
   },
   {
+    //get total supply of CUB-BUSD tokens
     "address": "0x0EF564D4F8D6C0ffE13348A32e21EFd55e508e84",
     "name": "totalSupply"
   },
   {
+    // get decimals of CUB
     "address": "0x50d809c74e0b8e49e7b4c65bb3109abe3ff4c1c1",
     "name": "decimals"
   },
   {
+    //get decimals of BUSD
     "address": "0xe9e7cea3dedca5984780bafc599bd69add087d56",
     "name": "decimals"
   }
@@ -42,6 +48,7 @@ const calls = [
 // Kingdom
 const callsK = [
   {
+    //get CAKE balance of CAKE CubMaximizer Vault contract.
     "address": "0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82",
     "name": "balanceOf",
     "params": [
@@ -49,6 +56,7 @@ const callsK = [
     ]
   },
   {
+    //get BUSD balance of CAKE CubMaximizer Vault contract
     "address": "0xe9e7cea3dedca5984780bafc599bd69add087d56",
     "name": "balanceOf",
     "params": [
@@ -56,6 +64,7 @@ const callsK = [
     ]
   },
   {
+    //get (CAKE Vault) balance of kindgom main contract. Not possible, since it doesn't have this function
     "address": "0xb1caBD8a32333b4af9dB06e58E2E571d0F64EBE1",
     "name": "balanceOf",
     "params": [
@@ -63,14 +72,17 @@ const callsK = [
     ]
   },
   {
+    //get balance of CubMaximizer Vault? Not possible, since it doesn't have this function
     "address": "0xb1caBD8a32333b4af9dB06e58E2E571d0F64EBE1",
     "name": "totalSupply"
   },
   {
+    //get CAKE decimals
     "address": "0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82",
     "name": "decimals"
   },
   {
+    //get BUSD decimals
     "address": "0xe9e7cea3dedca5984780bafc599bd69add087d56",
     "name": "decimals"
   }
